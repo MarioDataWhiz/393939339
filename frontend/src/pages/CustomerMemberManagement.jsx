@@ -25,8 +25,8 @@ const App = () => {
   const fetchStudIn = async () => {
     try {
       const [studentsRes, instructorsRes] = await Promise.all([
-        axios.get('http://localhost:5009/students'),
-        axios.get('http://localhost:5009/instructors')
+        axios.get('finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/students'),
+        axios.get('finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/instructors')
       ]);
       setStudents(studentsRes.data);
       setInstructors(instructorsRes.data);
@@ -41,7 +41,7 @@ const App = () => {
 
   const handleSaveStudent = async (id) => {
     try {
-      await axios.put(`http://localhost:5009/students/${id}`, updatedStudent);
+      await axios.put(`finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/students/${id}`, updatedStudent);
       setEditingStudentId(null);
     } catch (error) {
       console.error('Error saving student:', error);
@@ -54,7 +54,7 @@ const App = () => {
 
   const handleSaveInstructor = async (id) => {
     try {
-      await axios.put(`http://localhost:5009/instructors/${id}`, updatedInstructor);
+      await axios.put(`finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/instructors/${id}`, updatedInstructor);
       setEditingInstructorId(null);
     } catch (error) {
       console.error('Error saving instructor:', error);
