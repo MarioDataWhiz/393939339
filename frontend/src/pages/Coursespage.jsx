@@ -15,7 +15,7 @@ const CoursesPage = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5009/courses')
+      .get('https://finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/students')
       .then((response) => {
         setCourses(response.data);
       })
