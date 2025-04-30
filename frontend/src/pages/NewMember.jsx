@@ -31,7 +31,7 @@ const NewMember = () => {
 
   const handleAddStudent = async () => {
     try {
-      await axios.post('http://localhost:5009/students', newStudent);
+      await axios.post('finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/students', newStudent);
       setNewStudent({ name: '', email: '', age: '', address: '', phone: '', gender: '' });
     } catch (error) {
       console.error('Error adding student:', error);
@@ -40,7 +40,7 @@ const NewMember = () => {
 
   const handleAddInstructor = async () => {
     try {
-      await axios.post('http://localhost:5009/instructors', newInstructor);
+      await axios.post('finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/instructors', newInstructor);
       setNewInstructor({ name: '', email: '', role: '', age: '' });
     } catch (error) {
       console.error('Error adding instructor:', error);
