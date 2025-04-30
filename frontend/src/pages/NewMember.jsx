@@ -40,7 +40,7 @@ const NewMember = () => {
 
   const handleAddInstructor = async () => {
     try {
-      await axios.post('finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/instructors', newInstructor);
+      await axios.post('https://finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/instructors', newInstructor);
       setNewInstructor({ name: '', email: '', role: '', age: '' });
     } catch (error) {
       console.error('Error adding instructor:', error);
