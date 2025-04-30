@@ -11,7 +11,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 const { Pool } = require('pg');
 
 const app = express();
-const PORT = process.env.PORT || 5009;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
