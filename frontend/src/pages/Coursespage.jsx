@@ -15,7 +15,7 @@ const CoursesPage = () => {
 
   useEffect(() => {
     axios
-      .get('https://finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/students')
+      .get('https://finalfinal3-ehfybybcagdccuhb.eastus-01.azurewebsites.net/courses')
       .then((response) => {
         setCourses(response.data);
       })
